@@ -11,7 +11,7 @@ var app = express();
 
 // 设置 Mongoose 连接
 const mongoose = require('mongoose');
-const mongoDB = 'mongodb+srv://library:00000000@express-library.gpjt6.mongodb.net/?retryWrites=true&w=majority';
+const mongoDB = 'mongodb+srv://library:0000@express-library.gpjt6.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
